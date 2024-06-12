@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India DeTours</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="box"></div>
+    <h1>Animate My Font</h1>
+    <header>
+        <div id="menu-bar" class="fas fa bar"></div>
+        <a href="#" class="logo"><b>India Detour</b></a>
+    <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#itinerary">Itinerary</a>
+        <a href="#about">About</a>
+        <a href="#destination">Destination</a>
+    </nav>
+   
+
+    <div id = "google_translate_element"></div>
+    <script src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+    function googleTranslateElementInit(){
+        new google.translate.TranslateElement(
+            {pageLanguage: "en"},
+           "google_translate_element"
+  
+        );
+    }
+  </script>
+<nav>
+    <div class="navbar-container">
+
+      <form class="search-form">
+        <input type="text" placeholder="Search">
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </form>
+    </div>
+  </nav>
+
+    </header>
+    <section class="home" id="home">
+        <div class="controls">
+            <span class="vid-btn active" data-src="video2.mp4"></span>
+            <span class="vid-btn" data-src="video1.mp4"></span>
+            <span class="vid-btn" data-src="video3.mp4"></span>
+        </div>
+        <div class="video">
+            <video src="video2.mp4" id="video-slider" loop muted autoplay></video>
+        </div> 
+        <div class="content">
+            <h1>Explore new places <br>Indian culture awaits</h1>
+        </div>
+        
+    </section>
+
+    <!--------------------itinerary--------------------->
+    <section class="itinerary" id="itinerary">
+        <h1 class="heading">Itinerary</h1>
+        <div class="form-container">
+            <form action="">
+                <h3>Find your destination according to your preference.</h3>
+
+                <label for="Preference">Choose your preference:</label>
+                <select name="preference">
+                    <option value="0" selected disabled> Preference </option>
+                    <option value="Food">Food</option>
+                    <option value="Religious Places">Religious Places</option>
+                    <option value="History">Historical Places</option>
+                    <option value="Entertainment">Entertainment</option>
+                </select>
+                <label for="Budget">Select the budget you prefer:</label>
+                <select name="budget">
+                    <option value="0" selected disabled> Budget </option>
+                    <option value="under 1000">Under 1000</option>
+                    <option value="under 2k-3k">Under 2k - 3k</option>
+                    <option value="under 4k-6k">Under 4k - 6k</option>
+                    <option value="under 7k-10k">Under 7k - 10k</option>
+                </select>
+                <label for="Location">Select the location you prefer:</label>
+                <select name="location">
+                    <option value="0" selected disabled> Location </option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                </select>
+                <input type="submit" class="btn" value="Search Now">
+            </form>
+        </div>
+    </section>
+
+    <!------------------------about--------------------------->
+    <section class="About" id="About">
+           
+
+
+  <section class="about-us">
+    <h2>About Website</h2>
+    <p>The website offers a single platform where everything is accessible in multiple languages. The integrated voice and translator tools remove language barriers, making it convenient for users worldwide.</p>
+    <p>At this Platform, the aim is to assist tourists in planning their trips with ease and without frustration. Website provide comprehensive information about popular destinations and uncover the hidden gems that are often underrated.</p>
+    <p>For an immersive experience, I have incorporated 360-degree views on the website. You can explore various locations virtually, gaining insights and inspiration for your next adventure.</p>
+  </section>
+
+
+    
+    <!--------------------------destination-------------------------->
+
+    <section class="destination" id="destination">
+        <h2 class="heading">Destination</h2>
+        <div class="box-container">
+            <div class="box">
+                <img src="image2a.jpg" alt="">
+                <div class="content">
+                    <h3>Kedarnath</h3>
+                    <p>Kedarnath is a holy town nestled in the Himalayas. Located in Uttarakhand,
+                    it is one of the most sacred pilgrimages of Lord Shiva and is one of the famous Char Dham sites.</p>
+                    <a href="kedarnath.html" class="btn">See More</a>    
+                </div>
+            </div>
+            <div class="box">
+                <img src="image111.jpg" alt="">
+                <div class="content">
+                    <h3>Red Fort</h3>
+                    <p>Lying at the heart of Delhi, the majestic Red Fort stands as a testament to the architectural legacy
+                         of Mughals.The Red Fort Complex was built as the palace fort of Shahjahanabad, the new capital of
+                          the fifth Mughal Emperor of India, Shah Jahan.</p>
+                    <a href="redfort.html" class="btn">See More</a>    
+                </div>
+            </div>
+            <div class="box">
+                <img src="image12.jpg" alt="">
+                <div class="content">
+                    <h3>Vrindavan</h3>
+                    <p>Vrindavan has about 5,500 temples dedicated to the worship of Krishna and his divine consort Radha.
+                         It is one of the most sacred places for Vaishnavism tradition. </p>
+                    <a href="vrindavan.html" class="btn">See More</a>    
+                </div>
+            </div>
+            <div class="box">
+                <img src="image3.jpg" alt="">
+                <div class="content">
+                    <h3>Golden Temple</h3>
+                    <p>The Golden Temple Amritsar India (Sri Harimandir Sahib Amritsar) is not only a central
+                         religious place of the Sikhs, but also a symbol of human brotherhood and equality.</p>
+                    <a href="amritsar.html" class="btn">See More</a>    
+                </div>
+            </div>
+            <div class="box">
+                <img src="image4.jpg" alt="">
+                <div class="content">
+                    <h3>Akshardham</h3>
+                    <p>Akshardham Temple, Delhi, is a fantastic tourist spot for people from within and outside India.</p>
+                    <a href="akshardham.html" class="btn">See More</a>    
+                </div>
+            </div>
+            <div class="box">
+                <img src="image9.jpg" alt="">
+                <div class="content">
+                    <h3>Taj Mahal</h3>
+                    <p>The Taj Mahal is considered to be the greatest architectural achievement in the whole range of
+                         Indo-Islamic architecture.A complex mausoleum, the Taj Mahal is often considered to be the world's
+                          best example of Mughal architecture.</p>
+                    <a href="tajmahal.html" class="btn">See More</a>    
+                </div>
+            </div>
+            <div class="box">
+                <img src="image1.webp" alt="">
+                <div class="content">
+                    <h3>Bangla Sahib</h3>
+                    <p>GURDWARA SRI BANGLA SAHIB is situated in the Delhi City. 
+                        Built in the sacred visit of SRI GURU HARKRISHAN JI to Delhi.</p>
+                    <a href="banglasahib.html" class="btn">See More</a>    
+                </div>
+            </div>
+            <div class="box">
+                <img src="image10.jpg" alt="">
+                <div class="content">
+                    <h3>Gateway of India</h3>
+                    <p>The Gateway of India is an arch monument built during the 20th century in Bombay, India. The monument
+                         was erected to commemorate the landing of King George V and Queen Mary at Apollo Bunder on their
+                          visit to India in 1911.</p>
+                    <a href="gatewayofindia.html" class="btn">See More</a>    
+                </div>
+            </div>
+            <div class="box">
+                <img src="image7.jpeg" alt="">
+                <div class="content">
+                    <h3>Jama Masjid</h3>
+                    <p>Jama Masjid is a spectacular mosque built by Emperor Shah Jahan in Delhi.It remains one of the
+                         largest mosques in India, which can hold up to 25,000 people at one time.</p>
+                    <a href="jamamasjid.html" class="btn">See More</a>    
+                </div>
+            </div>
+            <div class="box">
+                <img src="image5a.jpg" alt="">
+                <div class="content">
+                    <h3>Somnath</h3>
+                    <p>Somnath is a magnificent temple situated in Sagar Kant of Saurashtra in Gujarat state. One of the
+                    12 holy Jyotirlingas of Lord Shiva is in Jyotirlinga here in Somnath. Somnath is also mentioned in Rigveda.</p>
+                    <a href="somnath.html" class="btn">See More</a>    
+                </div>
+            </div>
+            <div class="box">
+                <img src="image6.jpg" alt="">
+                <div class="content">
+                    <h3>Sacred Heart Church</h3>
+                    <p>The Cathedral of the Sacred Heart is a Roman Catholic cathedral belonging to the Latin Rite and
+                         one of the oldest church buildings in New Delhi, India.</p>
+                    <a href="sacredheart.html" class="btn">See More</a>    
+                </div>
+            </div>
+            
+        </div>
+         
+    </section>
+    <footer>
+        <div class="footer-container">
+          <div class="column">
+            <h3>About </h3>
+            <p>Your All-In-One Travel Guide</p>
+            <p>Thankyou for Visiting !!</p>
+          </div>
+          <div class="column">
+            <h3>Contact</h3>
+            <ul>
+              <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJNstzFcHFRhldhsRfhjgBsvWPGfdWjxffCHTfdvDFfJFkRNxCrBvrHTsHXvtCnRnqqMcxq"><i class="fa-solid fa-envelope"></i> prabhleen2901@gmail.com</a></li>
+              <li><a href=""><i class="fa-solid fa-square-phone"></i> Contact No. 8860555086</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h3>Follow Us</h3>
+            <ul class="social-media">
+              <li><a href="https://www.linkedin.com/in/prabhleen-kaur-496109249" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+              <li><a href="https://twitter.com/prabhleenn_7" target="_blank"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+              <li><a href="https://www.instagram.com/prabhleen.29/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+        <p>Copyright © Prabhleen Kaur. Made with <i class="fas fa-heart"></i>  All rights Reserved.</p>
+      </footer>
+
+
+
+
+
+<script>
+    let searchBtn =document.querySelector('#search-btn');
+    let searchBar = document.querySelector('.search-bar-container');
+    let menu = document.querySelector('#menu-bar');
+    let navbar = document.querySelector('.navbar');
+
+    menu.addEventListener('click', ()=>{
+        menu.classList.toggle('fa-times');
+        navbar.classList.toggle('active');
+    });
+    window.onscroll = ()=>{
+        searchBtn.classList.remove('fa-times');
+        searchBar.classList.remove('active');
+    }
+    searchBtn.addEventListener('click', ()=>{
+        searchBtn.classList.toggle('fa-times');
+        searchBar.classList.toggle('active');
+    }); 
+    
+    let videoBtn = document.querySelectorAll('.vid-btn');
+    videoBtn.forEach(btn =>{
+        btn.addEventListener('click', () => {
+            document.querySelector('.controls .active').classList.remove('active');
+            btn.classList.add('active');
+            let src = btn.getAttribute('data-src');
+            document.querySelector('#video-slider').src = src;
+        });
+    });
+</script>
+</body>
+</html>
